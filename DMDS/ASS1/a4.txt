@@ -1,0 +1,16 @@
+# Create a list of employees
+employees <- list("John", "Alice", "Bob", "Mary")
+
+# a. Display names of employees
+print("Employees:")
+print(employees)
+
+# b. Add an employee at the end of the list
+employees <- append(employees, "David")
+print("After adding an employee:")
+print(employees)
+
+# c. Remove the third element of the list
+employees <- employees[-3]
+print("After removing the third element:")
+print(employees)

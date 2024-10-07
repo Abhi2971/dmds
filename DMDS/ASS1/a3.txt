@@ -1,0 +1,12 @@
+# Create a list of strings
+string_list <- c("banana", "apple", "cherry", "date")
+
+# Sort in ascending order
+sorted_asc <- sort(string_list)
+print("Ascending Order:")
+print(sorted_asc)
+
+# Sort in descending order
+sorted_desc <- sort(string_list, decreasing = TRUE)
+print("Descending Order:")
+print(sorted_desc)

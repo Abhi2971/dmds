@@ -1,0 +1,11 @@
+# Create two vectors
+vector1 <- c(1, 2, 3, 4, 2)
+vector2 <- c(5, 6, 7, 8, 6)
+
+# Create a data frame
+df <- data.frame(vector1, vector2)
+
+# Find duplicate elements in the data frame
+duplicates <- df[duplicated(df), ]
+print("Duplicate Elements:")
+print(duplicates)

@@ -1,0 +1,8 @@
+# Create two factors
+factor1 <- factor(c("A", "B", "C"))
+factor2 <- factor(c("D", "E", "F"))
+
+# Concatenate the factors
+combined_factor <- factor(c(as.character(factor1), as.character(factor2)))
+print("Combined Factor:")
+print(combined_factor)

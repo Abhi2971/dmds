@@ -1,0 +1,12 @@
+# Load the women dataset
+data(women)
+
+# a. Display all rows of the data set having weight greater than 120
+heavy_women <- women[women$weight > 120, ]
+print("Rows with weight > 120:")
+print(heavy_women)
+
+# b. Display all rows of the data set in ascending order of weight
+sorted_women <- women[order(women$weight), ]
+print("Data sorted by weight:")
+print(sorted_women)

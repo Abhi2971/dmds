@@ -1,0 +1,17 @@
+# Load the mtcars dataset
+data(mtcars)
+
+# a. Display all the cars having mpg more than 20
+cars_mpg_20 <- mtcars[mtcars$mpg > 20, ]
+print("Cars with mpg > 20:")
+print(cars_mpg_20)
+
+# b. Subset the data set by mpg column for values greater than 15.0
+cars_mpg_15 <- subset(mtcars, mpg > 15)
+print("Cars with mpg > 15:")
+print(cars_mpg_15)
+
+# c. Display all cars having four gears
+cars_four_gears <- mtcars[mtcars$gear == 4, ]
+print("Cars with 4 gears:")
+print(cars_four_gears)

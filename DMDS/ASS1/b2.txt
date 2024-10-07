@@ -1,0 +1,8 @@
+# Create two matrices
+matrix1 <- matrix(1:4, nrow = 2)
+matrix2 <- matrix(5:8, nrow = 2)
+
+# Sum of the matrices
+sum_matrix <- matrix1 + matrix2
+print("Sum of Matrices:")
+print(sum_matrix)

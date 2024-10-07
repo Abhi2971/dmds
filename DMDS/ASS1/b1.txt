@@ -1,0 +1,14 @@
+reverse_and_sum <- function(number) {
+  # Reverse the number
+  reversed <- as.integer(rev(strsplit(as.character(number), NULL)[[1]]))
+  reversed_number <- as.integer(paste(reversed, collapse = ""))
+  
+  # Calculate the sum of digits
+  sum_digits <- sum(as.integer(strsplit(as.character(number), NULL)[[1]]))
+  
+  return(list(reversed_number = reversed_number, sum_digits = sum_digits))
+}
+
+# Example usage:
+result <- reverse_and_sum(1234)
+print(result)

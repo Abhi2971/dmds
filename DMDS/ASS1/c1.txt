@@ -1,0 +1,26 @@
+# Load the airquality dataset
+data(airquality)
+
+# a. Create a scatter plot to compare wind speed and temperature
+plot(airquality$Wind, airquality$Temp,
+     main = "Scatter Plot: Wind Speed vs Temperature",
+     xlab = "Wind Speed",
+     ylab = "Temperature",
+     pch = 19,
+     col = "blue")
+
+# b. Create a scatter plot to show the relationship between ozone and wind values
+plot(airquality$Wind, airquality$Ozone,
+     main = "Scatter Plot: Ozone vs Wind",
+     xlab = "Wind",
+     ylab = "Ozone",
+     col = airquality$Ozone,
+     pch = 19)
+
+# c. Create a bar plot to show the ozone level for all days having temperature > 70
+temp_above_70 <- airquality[airquality$Temp > 70, ]
+barplot(temp_above_70$Ozone,
+        main = "Ozone Levels for Days with Temperature > 70",
+        xlab = "Days",
+        ylab = "Ozone Level",
+        col = "red")

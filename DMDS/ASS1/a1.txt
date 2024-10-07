@@ -1,0 +1,15 @@
+# Create two vectors
+vector1 <- c(4, 8, 12, 16)
+vector2 <- c(2, 4, 6, 8)
+
+# Addition
+add_result <- vector1 + vector2
+print(paste("Addition:", add_result))
+
+# Multiplication
+multiply_result <- vector1 * vector2
+print(paste("Multiplication:", multiply_result))
+
+# Division
+divide_result <- vector1 / vector2
+print(paste("Division:", divide_result))
